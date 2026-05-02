@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FrameLayoutExample</string>
+    <string name="hello_text">Hello FrameLayout!</string>
+    <string name="button_text">Click Me</string>
+    <string name="button_clicked_text">Button Clicked!</string>
+    <string name="button_pressed_toast">Button Pressed</string>
+</resources>

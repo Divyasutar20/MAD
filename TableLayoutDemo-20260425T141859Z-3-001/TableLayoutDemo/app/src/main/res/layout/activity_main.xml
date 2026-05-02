@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Form Title -->
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Student Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Name Input -->
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:inputType="textPersonName"/>
+
+    <!-- Subject Input -->
+    <EditText
+        android:id="@+id/edtSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        android:inputType="text"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Marks Input -->
+    <EditText
+        android:id="@+id/edtMarks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Marks"
+        android:inputType="number"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Student"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+    <!-- Table Layout -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="20dp">
+
+        <!-- Header Row -->
+        <TableRow
+            android:background="#FFDDDDDD"
+            android:padding="8dp">
+
+            <TextView
+                android:text="Name"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:text="Subject"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+
+            <TextView
+                android:text="Marks"
+                android:textStyle="bold"
+                android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
